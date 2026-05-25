@@ -1,0 +1,35 @@
+# ====================================================================
+# CognitiveEye — Git Ignore Configuration
+# ====================================================================
+
+# Python bytecode/cached files (No need to track)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints and autosave states
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# PyTorch / Deep Learning model weights (Too heavy for standard Git)
+*.pth
+*.pt
+*.ckpt
+
+# Dataset directories and zip files (Automatically downloaded via pipeline)
+tiny-imagenet-200/
+tiny-imagenet-200.zip
+data/
+datasets/
+
+# Local pipeline generation artifacts
+model.zip
+
+# OS generated system files
+.DS_Store
+Thumbs.db
+
+# Virtual environments (If you use local venv)
+venv/
+.venv/
+env/
